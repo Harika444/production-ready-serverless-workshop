@@ -4,6 +4,5 @@ phases:
   build:
     commands:
       - npm install
-      - npm test
       - npm run sls -- deploy -s $STAGE -r $REGION
       - npm run acceptance
